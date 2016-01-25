@@ -12,7 +12,8 @@
 
     <TextView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:text="Fragments Example 2 Paps!" />
     <LinearLayout
         android:layout_width="match_parent"
@@ -31,6 +32,14 @@
             android:text="load Fr2"
             android:id="@+id/btn2"
             android:onClick="onLoad2"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:id="@+id/panelizator">
 
     </LinearLayout>
 </LinearLayout>

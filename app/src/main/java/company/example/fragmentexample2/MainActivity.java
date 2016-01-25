@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import company.example.fragmentexample2.Fragments.Fragment1;
+import company.example.fragmentexample2.Fragments.Fragment2;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -20,11 +21,19 @@ public class MainActivity extends AppCompatActivity {
         Fragment1 fr1 = new Fragment1();
         FragmentManager fm = getFragmentManager();
         FragmentTransaction ft = fm.beginTransaction();
+        ft.replace(R.id.panelizator, fr1,"FT");
 
         //Closing the transaction
         ft.commit();
     }
 
     public void onLoad2(View view) {
+        Fragment2 fr2 = new Fragment2();
+        FragmentManager fm = getFragmentManager();
+        FragmentTransaction ft = fm.beginTransaction();
+        ft.replace(R.id.panelizator, fr2,"FT");
+
+        //Closing the transaction
+        ft.commit();
     }
 }
